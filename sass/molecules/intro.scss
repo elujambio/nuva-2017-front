@@ -1,0 +1,57 @@
+#blob {
+	position:  absolute; 
+	top:  0; 
+	left:  0; 
+	height:  100%; 
+	width:  100vh;
+}
+
+.shapes {
+	height:  100%; 
+	width:  100%; 
+	position:  absolute; 
+	top:  0; 
+	left:  0;
+	transform: translateZ(-400px) translateX(100px) scale(1.15);
+}
+.intro {
+ 	display:  flex; 
+ 	flex-direction:  column; 
+ 	align-items:  flex-start; 
+ 	justify-content:  center; 
+ 	height:  100%; 
+ 	width:  100%; 
+    transform-style: preserve-3d;
+    perspective:  1000px;
+    perspective-origin: 0% 50%;
+    transform: translateZ(0);
+}
+.big-as-fuck-text {
+	margin-left:  $global-margin-left;
+	font-size:  144px; 
+	color:  #131313; 
+	font-family:   "Gilroy";
+	font-weight:  800;
+	line-height:  100%;  
+	text-transform:  uppercase;
+    transform: translateZ(-100px);
+}
+.intro-text {
+	margin-left:  $global-margin-left;
+	font-family:  'Gilroy';
+	font-weight:  500; 
+	font-size:  24px; 
+	max-width: 320px;
+	-webkit-font-smoothing: antialiased;
+	backface-visibility: hidden;
+	position:  absolute; 
+	top:  50%; 
+	right:  $global-margin-left;
+	transform:  translateY(-50%) translateZ(-200px);
+	text-align:  right;
+}
+.intro-container { 
+	width:  100%; 
+	height:  100%; 
+	overflow:  hidden;
+}

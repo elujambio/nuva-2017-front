@@ -1,0 +1,35 @@
+@import 'fonts';
+
+html, 
+body {
+	background:  #ffffff;
+	width:  100%;
+	height:  100%; 
+
+}
+* {
+	-webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4, h5, h6, p, b, span, div {
+	font-family:  "Gilroy";
+}
+svg {
+	// max-height:  800px; 
+	// max-width:  800px;
+}
+::selection {
+	background-color:  #131313;
+	color:  #ffffff;
+}
+.hidden {
+	display: none; 
+}
+
+// VARIABLES
+
+$global-margin-left:  180px;
+
+@import 'molecules/navigation';
+@import 'molecules/intro';
+@import 'molecules/manifesto';
+@import 'molecules/clients';
